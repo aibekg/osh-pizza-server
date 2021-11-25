@@ -27,4 +27,4 @@ app.use('/income', IncomeRouter);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server worked PORT: ${PORT} !!`))
+app.listen(PORT, () => console.log(`Server worked PORT: ${PORT} !!`));
