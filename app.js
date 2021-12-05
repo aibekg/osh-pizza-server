@@ -7,6 +7,7 @@ const GetProductsRouter = require('./routes/get_products');
 const AuthRouter = require('./routes/auth');
 const StockRouter = require('./routes/stock');
 const IncomeRouter = require('./routes/income');
+const userRouter= require('./routes/user')
 
 const path = require('path')
 const app = express();
@@ -24,6 +25,7 @@ app.use('/update', UpdateProductRouter);
 app.use('/auth', AuthRouter);
 app.use('/stock', StockRouter);
 app.use('/income', IncomeRouter);
+app.use('/users', userRouter);
 
 const PORT = process.env.PORT || 5000;
 

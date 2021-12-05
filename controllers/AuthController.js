@@ -84,6 +84,7 @@ module.exports.addUser = (req, res) => {
         }
     })
 }
+
 module.exports.getUser = (req, res) => {
     const {phone_number}  = jwt.verify(req.token, keys.jwt);
     console.log(phone_number)
