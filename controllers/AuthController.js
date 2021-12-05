@@ -13,7 +13,8 @@ const connection = mysql.createPool(require('../middleware/config'));
 
 module.exports.getMessage = (req, res) => {
     const phone_number = req.body.phone_number;
-    const random_code = Math.floor((Math.random() * 10000) + 1);
+    // const random_code = Math.floor((Math.random() * 10000) + 1);
+    const random_code = 1234;
     console.log(phone_number)
     const hashRandomCode = bcrypt.hashSync(`${random_code}`, 7);
     let xml = '<?xml version="1.0" encoding="UTF-8"?>' +
